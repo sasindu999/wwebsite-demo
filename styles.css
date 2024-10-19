@@ -1,0 +1,37 @@
+/* Custom styles for TechSec Hub */
+
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-5px, 5px)
+    }
+    40% {
+        transform: translate(-5px, -5px)
+    }
+    60% {
+        transform: translate(5px, 5px)
+    }
+    80% {
+        transform: translate(5px, -5px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+
+.glitch-effect:hover {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite
+}
+
+.matrix-bg {
+    background-color: black;
+    background-image: 
+        radial-gradient(rgba(0, 255, 0, 0.15) 1px, transparent 1px),
+        radial-gradient(rgba(0, 255, 0, 0.15) 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+}
+
+/* Add any additional custom styles here */

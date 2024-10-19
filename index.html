@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSec Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <header class="bg-gray-800 py-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400 glitch-effect">TechSec Hub</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Home</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Tools</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Articles</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <!-- Hero Section with Background Image -->
+        <section class="relative h-96 mb-12 rounded-lg overflow-hidden">
+            <!-- Replace with an actual cybersecurity-related hero image -->
+            <img src="https://media.licdn.com/dms/image/D4E12AQECiGyXwcypQg/article-cover_image-shrink_720_1280/0/1690224100946?e=2147483647&v=beta&t=XDmCBeXQ7JmyOLOFTBhRKRR0IE9GrBJKpldUUyzbqP0" alt="Cybersecurity hero image" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h2 class="text-4xl font-bold text-white text-center">Securing the Digital Frontier</h2>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-xl font-bold mb-4">Latest Security Threats</h2>
+                <ul class="list-disc list-inside" id="threats-list">
+                    <li>Ransomware attacks on the rise</li>
+                    <li>New phishing techniques targeting remote workers</li>
+                    <li>IoT vulnerabilities exploited in recent breaches</li>
+                </ul>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                <h2 class="text-xl font-bold mb-4">Featured Tool</h2>
+                <div class="relative">
+                    <!-- Replace with an actual image of a hacking or security tool interface -->
+                    <img src="https://www.lancaster.ac.uk/media/lancaster-university/content-assets/images/fst/new-hero/hipsterhero.jpg" alt="Hacker tool interface" class="w-full rounded-md mb-4">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded">Try Now</button>
+                    </div>
+                </div>
+                <p>Discover our new penetration testing suite, designed for ethical hackers and security professionals.</p>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-bold mb-6">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <!-- Replace with an image of a hacker working or a cybersecurity professional -->
+                    <img src="https://miro.medium.com/v2/resize:fit:1200/1*72UsVOtaSk1bTZlA4Rqpfg.png" alt="Hacker working" class="w-full rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">The Future of Cybersecurity</h3>
+                    <p class="text-gray-400">Exploring emerging trends and technologies in the cybersecurity landscape.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <!-- Replace with an image of code on a screen or a software vulnerability concept -->
+                    <img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Code on screen" class="w-full rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Secure Coding Practices</h3>
+                    <p class="text-gray-400">Essential techniques for writing secure and robust code in any language.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <!-- Replace with an image of a network diagram or cybersecurity infrastructure -->
+                    <img src="https://www.frequentis.com/sites/default/files/inline-images/Research_cyber_1200x400.jpg" alt="Network diagram" class="w-full rounded-md mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Network Security 101</h3>
+                    <p class="text-gray-400">A beginner's guide to protecting your organization's network infrastructure.</p>
+                </div>
+            </div>
+        </section>
+
+	<section class="mt-12 p-8 rounded-lg matrix-bg">
+    <h2 class="text-2xl font-bold mb-6 text-center">Live Cyber Threat Map</h2>
+    <div id="threat-map" class="h-96 bg-gray-800 rounded-lg flex items-center justify-center">
+        <iframe src="https://cybermap.kaspersky.com/" style="border: none; width: 100%; height: 100%;"></iframe>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="bg-gray-800 mt-12 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 TechSec Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
